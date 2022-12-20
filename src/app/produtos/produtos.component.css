@@ -1,18 +1,18 @@
 .product-list {
   padding: 40px 0;
-  width: fit-content;    
   display: flex;
-  gap: 20px;
-  flex-flow: row wrap;  
+  flex-wrap: wrap;  
   justify-content: space-evenly;
   align-content: center;  
+  gap: 20px;
 }
 
 .product-list__card {
-  box-sizing: border-box;
-  padding: 10px;
   border-radius: 4px;
-  flex: 0 1 270px;
+  box-sizing: border-box;
+  max-width: 100%;
+  padding: 10px;
+  flex: 0 1 250px;
   height: 450px;
   background-color: white;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;       
@@ -20,7 +20,7 @@
 
 .product-list__card:hover {
   outline: 1px solid var(--blue);
-  transform: scale(1.1, 1.1);
+  /* transform: scale(1.1, 1.1); */
   cursor: pointer;
 }
 
